@@ -4,11 +4,15 @@ import java.awt.*;
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
 public class VentanaInicio extends JFrame{
     
+    ArrayList<String> caranchoa = new ArrayList<String>();
+    
     private JComboBox product;
+    DefaultTableModel modo1 = new DefaultTableModel();
     
     public class AlTocarlisto implements ActionListener{
         @Override
@@ -20,23 +24,18 @@ public class VentanaInicio extends JFrame{
         setSize(1366, 743);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         
-        DefaultTableModel modo1 = new DefaultTableModel();
-        
         JPanel iniciar = new JPanel();
         
         //Creacion de la tabla
         JPanel tabliat = new JPanel();
         
-        Object rowData[][] = { { "Nombre del producto", "Cantidad", "Tipo" }, {"", "", ""}
-        , {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}
-        , {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}
-        , {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}
-        , {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}
-        , {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}
-        , {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}
-        , {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}, {"", "", ""}};
-        Object columnNames[] = { "Column One", "Column Two", "Column Three" };
-        JTable table = new JTable(rowData, modo1);
+        Object rowData[][] = { { "Nombre del producto", "Cantidad", "Tipo" }};
+        
+        modo1.addRow(rowData);
+        
+        JTable table = new JTable(modo1);
+        
+        tabliat.add(table);
         
         //Creacion del boton de cracion
         JButton BCrear = new JButton("Crear");
@@ -51,6 +50,7 @@ public class VentanaInicio extends JFrame{
         product = new JComboBox();
         TipoStock.add(product);
         
+        
         JPanel PanelCrear = new JPanel();
         PanelCrear.setLayout(new FlowLayout());
         PanelCrear.add(BCrear);
@@ -58,7 +58,7 @@ public class VentanaInicio extends JFrame{
         iniciar.add(BCrear);
         iniciar.add(TipoProducto);
         iniciar.add(TipoStock);
-        iniciar.add(table);
+        iniciar.add(tabliat);
         
         this.add(iniciar);
     }
@@ -66,15 +66,14 @@ public class VentanaInicio extends JFrame{
         @Override
         public void actionPerformed(ActionEvent ae) {
             
-            DefaultTableModel modo1 = new DefaultTableModel();
-            
             String NombreProd = JOptionPane.showInputDialog("Ingrese el producto", "");
             String cantprod = JOptionPane.showInputDialog("Ingrese la cantidad", "");
             String tipoprod = JOptionPane.showInputDialog("Ingrese el tipo de producto", "");
+            //caranchoa.toArray(NombreProd);
+            String [] datos = {NombreProd, cantprod, tipoprod};
             
-            String [] datos = {cantprod, tipoprod};
+            product.addItem(NombreProd);
             
-            modo1.addColumn(NombreProd);
             modo1.addRow(datos);
             
             
