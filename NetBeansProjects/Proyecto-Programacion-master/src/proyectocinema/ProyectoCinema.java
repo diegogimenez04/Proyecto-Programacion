@@ -52,18 +52,22 @@ public class ProyectoCinema extends JFrame implements ActionListener, KeyListene
             VentanaParaAsientos asientos = new VentanaParaAsientos();
             asientos.setVisible(true);
             //Ponemos el precio
-            if (e.getSource().equals(this.botoncomun)){
-                String butacas = this.txfcantidad.getText();
-                double butacascant = Double.parseDouble(butacas);
-                butacascant = butacascant * entradacomun.getPreciocomun();
-                precio.setText(butacascant + " $");
-                this.txfcantidad.setText("");
-            }else if(e.getSource().equals(this.botonvip)){
-                String butacas = this.txfcantidad.getText();
-                double butacascant = Double.parseDouble(butacas);
-                butacascant = butacascant * entradavip.getPreciovip();
-                precio.setText(butacascant + " $");
-                this.txfcantidad.setText("");
+            try{
+                if (e.getSource().equals(this.botoncomun)){
+                    String butacas = this.txfcantidad.getText();
+                    double butacascant = Double.parseDouble(butacas);
+                    butacascant = butacascant * entradacomun.getPreciocomun();
+                    precio.setText(butacascant + " $");
+                    this.txfcantidad.setText("");
+                }else if(e.getSource().equals(this.botonvip)){
+                    String butacas = this.txfcantidad.getText();
+                    double butacascant = Double.parseDouble(butacas);
+                    butacascant = butacascant * entradavip.getPreciovip();
+                    precio.setText(butacascant + " $");
+                    this.txfcantidad.setText("");
+                }
+            }catch(NumberFormatException snum){
+                JOptionPane.showMessageDialog(this, "Debes ingresar un numero por lo menos");
             }
             //Colocamos las entradas en la tabla
             
