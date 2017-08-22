@@ -9,16 +9,15 @@ package Entradas;
  *
  * @author user2
  */
-public class EntradaVip extends Entradas {
-    
-    private int preciovip = 200;
+public class EntradaVip {
+    private int PrecioVip = 120;
 
-    public int getPreciovip() {
-        return preciovip;
+    public int getPrecioVip() {
+        return PrecioVip;
     }
 
-    public void setPreciovip(int preciovip) {
-        this.preciovip = preciovip;
+    public void setPrecioVip(int precioVip) {
+        this.PrecioVip = precioVip;
     }
     
     

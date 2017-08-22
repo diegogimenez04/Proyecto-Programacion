@@ -3,17 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Confiteria.Comida;
-
-import Confiteria.Confiteria;
-import Confiteria.Confiteria;
+package Salas;
 
 /**
  *
  * @author user2
  */
-public class Comida extends Confiteria{
+public class Sala {
+    int numeroSala;
     
-    
-    
+    int cantidadAsientos;
 }

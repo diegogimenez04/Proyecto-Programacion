@@ -15,6 +15,10 @@ public class Confiteria extends ConfiteriaVentana{
     
     int precio;
     
+    String Tipo;
+    
+    String Marca;
+    
     public Confiteria(){
         
     }

@@ -10,7 +10,7 @@ package Entradas;
  * @author user2
  */
 public class EntradaComun {
-    private int preciocomun = 120;
+    private int preciocomun = 100;
 
     public int getPreciocomun() {
         return preciocomun;
@@ -19,5 +19,6 @@ public class EntradaComun {
     public void setPreciocomun(int preciocomun) {
         this.preciocomun = preciocomun;
     }
+    
     
 }

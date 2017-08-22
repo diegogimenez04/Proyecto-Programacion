@@ -9,10 +9,12 @@ package Ventanas;
  *
  * @author user2
  */
-public class Exe {
+public class Ejecutar {
     public static void main(String[] args){
+        ConfiteriaVentana ventana = new ConfiteriaVentana();
         ProyectoCinema execute = new ProyectoCinema();
         execute.setVisible(true);
+        ventana.setVisible(true);
     }
     
     

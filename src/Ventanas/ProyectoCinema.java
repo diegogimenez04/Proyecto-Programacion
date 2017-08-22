@@ -64,7 +64,7 @@ public class ProyectoCinema extends JFrame implements ActionListener, KeyListene
                 }else if(e.getSource().equals(this.botonvip)){
                     String butacas = this.txfcantidad.getText();
                     double butacascant = Double.parseDouble(butacas);
-                    butacascant = butacascant * entradavip.getPreciovip();
+                    butacascant = butacascant * entradavip.getPrecioVip();
                     precio.setText(butacascant + " $");
                     this.txfcantidad.setText("");
                 }

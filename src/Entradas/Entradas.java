@@ -10,7 +10,7 @@ package Entradas;
  * @author user2
  */
 public class Entradas {
-    private int precio = 1;
+    protected int precio;
     private String asiento;
 
     public String getAsiento() {

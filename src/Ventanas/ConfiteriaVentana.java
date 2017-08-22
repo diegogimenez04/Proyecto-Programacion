@@ -8,6 +8,7 @@ package Ventanas;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -16,7 +17,12 @@ import javax.swing.JFrame;
 public class ConfiteriaVentana extends JFrame implements ActionListener{
     
     public ConfiteriaVentana(){
+        setSize(400,400);
+        setLocation(300,500);
         
+        JPanel panel = new JPanel();
+        
+        this.add(panel);
     }
 
     @Override
