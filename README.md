@@ -1,4 +1,4 @@
-# ***Proyecto De Cine***
+# ***CINES EL GRANDE***
 ---
 *¿En que consiste?* 
 En este proyecto decidimos hacer un sistema para vender entradas y confiteria de un cine, donde la misma contara con un menú principal en donde podremos comprar tipo de entradas (Comun o Vip) se debera especificar primero la cantidad de entradas en el primero, luego sera pasado a una ventana donde estaran las buatacas y podra seleccionar a su gusto en cual sentarse. Tendra tambien despues de lo mencionado anteriormente una ventana donde podra elegir lo que quiere comprar y mostrando el precio total de toda la compra.
