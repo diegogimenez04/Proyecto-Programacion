@@ -6,7 +6,6 @@ En este proyecto decidimos hacer un sistema para vender entradas y confiteria de
 ---
 *¿Que ventanas usamos?*
 El programa empezara con una ventana donde tendremos que elegir el numero de entradas, junto con que tipo de entrada queremos, y la misma tendra un precio dependiendo de si elijamos entrada vip o comun. Seguido de esto se abrira otra ventana donde tendremos las butacasm y elejira, el cliente, donde sentarse dependiendo de las butacas disponibles. El programa fializara con una ultima ventana donde tendremos los articulos de confiteria, y podra elegir o no lo que quiera consumir, dependiendo de lo que guste, luego de eso el programa imprimira el valor total de la entrada mas el valor de lo comprado en confitería.
-![Ventana 1](/home/user2/Escritorio/Aplicacion.png)
 
 ---
 *¿Que otras librerias debemos importar?*
