@@ -50,9 +50,7 @@ public class ProyectoCinema extends JFrame implements ActionListener, KeyListene
         
         @Override
         public void actionPerformed(ActionEvent e) {
-            //Creamos una ventana
-            VentanaParaAsientos asientos = new VentanaParaAsientos();
-            asientos.setVisible(true);
+            
             //Ponemos el precio
             try{
                 if (e.getSource().equals(this.botoncomun)){
@@ -61,12 +59,17 @@ public class ProyectoCinema extends JFrame implements ActionListener, KeyListene
                     butacascant = butacascant * entradacomun.getPreciocomun();
                     precio.setText(butacascant + " $");
                     this.txfcantidad.setText("");
+                    //Creamos una ventana
+                    VentanaSalas asientos = new VentanaSalas();
+                    asientos.setVisible(true);
                 }else if(e.getSource().equals(this.botonvip)){
                     String butacas = this.txfcantidad.getText();
                     double butacascant = Double.parseDouble(butacas);
                     butacascant = butacascant * entradavip.getPrecioVip();
                     precio.setText(butacascant + " $");
                     this.txfcantidad.setText("");
+                    VentanaSalas asientos = new VentanaSalas();
+                    asientos.setVisible(true);
                 }
             }catch(NumberFormatException snum){
                 JOptionPane.showMessageDialog(this, "Debes ingresar un numero por lo menos");

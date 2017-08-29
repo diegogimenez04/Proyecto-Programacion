@@ -16,7 +16,7 @@ public class VentanaSalas extends JFrame {
         // Tamaño y titulo de ventana
         super("Sala de Cine");
         setSize(550, 380);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         
         // Definimos el Panel, los labels y los CheckBox
         JPanel pan = new JPanel();
