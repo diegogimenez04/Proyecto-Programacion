@@ -5,8 +5,6 @@
  */
 package Confiteria;
 
-import Ventanas.ConfiteriaVentana;
-
 /**
  *
  * @author user2
@@ -18,6 +16,31 @@ public class Confiteria extends ConfiteriaVentana{
     String Tipo;
     
     String Marca;
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public String getTipo() {
+        return Tipo;
+    }
+
+    public void setTipo(String Tipo) {
+        this.Tipo = Tipo;
+    }
+
+    public String getMarca() {
+        return Marca;
+    }
+
+    public void setMarca(String Marca) {
+        this.Marca = Marca;
+    }
+    
     
     public Confiteria(){
         

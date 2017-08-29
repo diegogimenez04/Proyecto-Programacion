@@ -1,4 +1,4 @@
-package Ventanas;
+package Entradas;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,6 +8,7 @@ import javax.swing.*;
 import Entradas.EntradaComun;
 import Entradas.EntradaVip;
 import Entradas.Entradas;
+import Ventanas.VentanaSalas;
 public class ProyectoCinema extends JFrame implements ActionListener, KeyListener {
     
     EntradaVip entradavip = new EntradaVip();
@@ -21,11 +22,10 @@ public class ProyectoCinema extends JFrame implements ActionListener, KeyListene
     
     public ProyectoCinema (){
         //Inicializamos el proyecto con cosas basicas
-        setSize(200, 300);
+        setSize(200, 120);
         setDefaultCloseOperation(EXIT_ON_CLOSE);    
         setLocation(600,200);
-        //Ponemos atributos a la tabla
-        
+        //Seteamos el color de fondo
         
         //Seteamos el panel
         JPanel framex = new JPanel();

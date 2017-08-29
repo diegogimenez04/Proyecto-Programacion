@@ -10,7 +10,8 @@ package Entradas;
  * @author user2
  */
 public class Entradas {
-    protected int precio;
+    private int preciocomun;
+    private int preciovip;
     private String asiento;
 
     public String getAsiento() {
@@ -20,14 +21,7 @@ public class Entradas {
     public void setAsiento(String asiento) {
         this.asiento = asiento;
     }
-
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
-    }
+    
     
     
 }

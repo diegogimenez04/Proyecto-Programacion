@@ -5,6 +5,9 @@
  */
 package Ventanas;
 
+import Entradas.ProyectoCinema;
+import Confiteria.ConfiteriaVentana;
+
 /**
  *
  * @author user2

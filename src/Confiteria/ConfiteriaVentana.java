@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ventanas;
+package Confiteria;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -16,6 +18,12 @@ import javax.swing.JPanel;
  */
 public class ConfiteriaVentana extends JFrame implements ActionListener{
     
+    Confiteria confi;
+    
+    JButton save;
+    JButton cancel;
+    JButton cuadrado;
+    
     public ConfiteriaVentana(){
         setSize(400,400);
         setLocation(300,500);
@@ -23,6 +31,8 @@ public class ConfiteriaVentana extends JFrame implements ActionListener{
         JPanel panel = new JPanel();
         
         this.add(panel);
+        
+        
     }
 
     @Override
