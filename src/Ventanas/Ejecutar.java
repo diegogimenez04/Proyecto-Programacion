@@ -15,6 +15,8 @@ public class Ejecutar {
         ProyectoCinema execute = new ProyectoCinema();
         execute.setVisible(true);
         ventana.setVisible(true);
+        VentanaSalas ejecutable = new VentanaSalas ();
+        ejecutable.setVisible(true);
     }
     
     
