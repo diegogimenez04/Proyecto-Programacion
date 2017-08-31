@@ -22,6 +22,9 @@ public class ConfiteriaVentana extends JFrame implements ActionListener{
     JButton cancel;
     JButton cuadrado;
     
+    JTextField cantidadComida;
+    JTextField cantidadBebida;
+    
     JComboBox bebida;
     JComboBox comida;
     
@@ -35,8 +38,8 @@ public class ConfiteriaVentana extends JFrame implements ActionListener{
         setSize(400,400);
         setLocation(300,500);
         
-        bebida.setModel(new DefaultComboBoxModel(confiteria.listabebida.toArray()));
         comida.setModel(new DefaultComboBoxModel(confiteria.listacomida.toArray()));
+        bebida.setModel(new DefaultComboBoxModel(confiteria.listabebida.toArray()));
         
         JPanel panel = new JPanel();
         
@@ -47,7 +50,11 @@ public class ConfiteriaVentana extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource().equals(save)){
+            String cantibebid = this.cantidadComida.getText();
+            double cantibebi3 = Double.parseDouble(cantibebid);
             
+            String canticomd = this.cantidadComida.getText();
+            double canticomi3 = Double.parseDouble(canticomd);
         }
     }
     
