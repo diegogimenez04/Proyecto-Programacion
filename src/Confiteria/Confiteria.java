@@ -5,18 +5,81 @@
  */
 package Confiteria;
 
+import java.awt.List;
+import java.util.ArrayList;
+
 /**
  *
  * @author user2
  */
 public class Confiteria extends ConfiteriaVentana{
     
-    int precio;
+    private int precio;
     
-    String Tipo;
+    private String Tipo;
     
-    String Marca;
+    private String Marca;
+    
+    private int pepsi = 40;
+    private int coca = 50;
+    private int fanta = 40;
+    
+    private int nachos = 70;
+    private int pizza = 100;
+    private int pochoclodulce = 60;
+    
+    ArrayList<Integer> listacomida = new ArrayList<Integer>();    
+    ArrayList<Integer> listabebida = new ArrayList<Integer>();
+    
+    
+    public int getNachos() {
+        return nachos;
+    }
 
+    public void setNachos(int nachos) {
+        this.nachos = nachos;
+    }
+
+    public int getPizza() {
+        return pizza;
+    }
+
+    public void setPizza(int pizza) {
+        this.pizza = pizza;
+    }
+
+    public int getPochoclodulce() {
+        return pochoclodulce;
+    }
+
+    public void setPochoclodulce(int pochoclodulce) {
+        this.pochoclodulce = pochoclodulce;
+    }
+
+    public int getPepsi() {
+        return pepsi;
+    }
+
+    public void setPepsi(int pepsi) {
+        this.pepsi = pepsi;
+    }
+
+    public int getCoca() {
+        return coca;
+    }
+
+    public void setCoca(int coca) {
+        this.coca = coca;
+    }
+
+    public int getFanta() {
+        return fanta;
+    }
+
+    public void setFanta(int fanta) {
+        this.fanta = fanta;
+    }
+    
     public int getPrecio() {
         return precio;
     }
@@ -41,9 +104,12 @@ public class Confiteria extends ConfiteriaVentana{
         this.Marca = Marca;
     }
     
-    
     public Confiteria(){
+        listacomida.add(nachos, pizza);
+        listacomida.add(pochoclodulce);
         
+        listabebida.add(pepsi, coca);
+        listabebida.add(fanta);
     }
     
 }
