@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author user2
  */
-public class Confiteria   {
+public class Confiteria{
 
     private int precio;
 

@@ -53,14 +53,12 @@ public class ConfiteriaVentana extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        if (ae.getSource().equals(save)) {
-            /*
+        if (ae.getSource().equals(save)){
             String cantibebid = this.cantidadComida.getText();
             double cantibebi3 = Double.parseDouble(cantibebid);
 
             String canticomd = this.cantidadComida.getText();
             double canticomi3 = Double.parseDouble(canticomd);
-             */
         }
     }
 
