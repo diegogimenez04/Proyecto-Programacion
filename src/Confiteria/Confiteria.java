@@ -31,77 +31,35 @@ public class Confiteria{
     public ArrayList<Integer> listacomida = new ArrayList<Integer>();
     public ArrayList<Integer> listabebida = new ArrayList<Integer>();
 
-    public int getNachos() {
-        return nachos;
-    }
-
-    public void setNachos(int nachos) {
-        this.nachos = nachos;
-    }
-
-    public int getPizza() {
-        return pizza;
-    }
-
-    public void setPizza(int pizza) {
-        this.pizza = pizza;
-    }
-
-    public int getPochoclodulce() {
-        return pochoclodulce;
-    }
-
-    public void setPochoclodulce(int pochoclodulce) {
-        this.pochoclodulce = pochoclodulce;
+    public int getPrecio() {
+        return precio;
     }
 
     public int getPepsi() {
         return pepsi;
     }
 
-    public void setPepsi(int pepsi) {
-        this.pepsi = pepsi;
-    }
-
     public int getCoca() {
         return coca;
-    }
-
-    public void setCoca(int coca) {
-        this.coca = coca;
     }
 
     public int getFanta() {
         return fanta;
     }
 
-    public void setFanta(int fanta) {
-        this.fanta = fanta;
+    public int getNachos() {
+        return nachos;
     }
 
-    public int getPrecio() {
-        return precio;
+    public int getPizza() {
+        return pizza;
     }
 
-    public void setPrecio(int precio) {
-        this.precio = precio;
+    public int getPochoclodulce() {
+        return pochoclodulce;
     }
 
-    public String getTipo() {
-        return Tipo;
-    }
-
-    public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
-    }
-
-    public String getMarca() {
-        return Marca;
-    }
-
-    public void setMarca(String Marca) {
-        this.Marca = Marca;
-    }
+    
 
     public Confiteria() {
 

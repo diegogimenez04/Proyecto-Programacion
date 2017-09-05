@@ -35,15 +35,17 @@ public class ConfiteriaVentana extends JFrame implements ActionListener {
         //Definimos caracteristicas de la ventana
 
         Confiteria confiteria1 = new Confiteria();
-
+        
+        JPanel panel = new JPanel();
+        
         comida = new JComboBox();
         bebida = new JComboBox();
 
         comida.setModel(new DefaultComboBoxModel(confiteria1.listacomida.toArray()));
         bebida.setModel(new DefaultComboBoxModel(confiteria1.listabebida.toArray()));
-
-        JPanel panel = new JPanel();
-
+        
+        
+        
         this.add(panel);
 
         this.setSize(400, 400);
