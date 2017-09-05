@@ -16,46 +16,52 @@ import javax.swing.JPanel;
  *
  * @author user2
  */
-public class ConfiteriaVentana extends JFrame implements ActionListener{
-    
+public class ConfiteriaVentana extends JFrame implements ActionListener {
+
     JButton save;
     JButton cancel;
     JButton cuadrado;
-    
+
     JTextField cantidadComida;
     JTextField cantidadBebida;
-    
+
     JComboBox bebida;
     JComboBox comida;
-    
+
     JLabel total;
-    
+
     //Creamos el objeto de confiteria
-    Confiteria confiteria = new Confiteria();
-    
-    public ConfiteriaVentana(){
+    public ConfiteriaVentana() {
         //Definimos caracteristicas de la ventana
-        setSize(400,400);
-        setLocation(300,500);
-        
-        comida.setModel(new DefaultComboBoxModel(confiteria.listacomida.toArray()));
-        bebida.setModel(new DefaultComboBoxModel(confiteria.listabebida.toArray()));
-        
+
+        Confiteria confiteria1 = new Confiteria();
+
+        comida = new JComboBox();
+        bebida = new JComboBox();
+
+        comida.setModel(new DefaultComboBoxModel(confiteria1.listacomida.toArray()));
+        bebida.setModel(new DefaultComboBoxModel(confiteria1.listabebida.toArray()));
+
         JPanel panel = new JPanel();
-        
+
         this.add(panel);
-        
+
+        this.setSize(400, 400);
+        this.setLocation(300, 500);
+
     }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        if (ae.getSource().equals(save)){
+        if (ae.getSource().equals(save)) {
+            /*
             String cantibebid = this.cantidadComida.getText();
             double cantibebi3 = Double.parseDouble(cantibebid);
-            
+
             String canticomd = this.cantidadComida.getText();
             double canticomi3 = Double.parseDouble(canticomd);
+             */
         }
     }
-    
+
 }

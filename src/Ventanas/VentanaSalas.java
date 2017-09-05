@@ -10,6 +10,7 @@ public class VentanaSalas extends JFrame {
     // Creamos los JLabel y JCheckbox
     private JLabel label1, label2;
     private JCheckBox check1, check2, check3, check4, check5, check6, check7, check8, check9, check10, check11, check12 ;
+    private JButton btn1;
         
     public VentanaSalas(){
         
@@ -62,6 +63,10 @@ public class VentanaSalas extends JFrame {
         check11.setBounds(310,120,100,60);
         check12 = new JCheckBox("Butaca 12");
         add(check12);
+        check12.setBounds(310,170,100,60);
+        
+        btn1 = new JButton("Guardar");
+        add(btn1);
         check12.setBounds(310,170,100,60);
         
     }

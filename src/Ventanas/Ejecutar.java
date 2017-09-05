@@ -17,9 +17,9 @@ public class Ejecutar {
         ConfiteriaVentana ventana = new ConfiteriaVentana();
         ProyectoCinema execute = new ProyectoCinema();
         execute.setVisible(true);
-        ventana.setVisible(false);
+        ventana.setVisible(true);
         VentanaSalas ejecutable = new VentanaSalas ();
-        ejecutable.setVisible(false);
+        ejecutable.setVisible(true);
     }
     
     
