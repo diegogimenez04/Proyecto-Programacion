@@ -5,14 +5,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.*;
-import Entradas.EntradaComun;
-import Entradas.EntradaVip;
 import Entradas.Entradas;
 import Ventanas.VentanaSalas;
 public class ProyectoCinema extends JFrame implements ActionListener, KeyListener {
     
-    EntradaVip entradavip = new EntradaVip();
-    EntradaComun entradacomun = new EntradaComun();
+    Entradas entrada = new Entradas();
     
     JButton botoncomun = new JButton("Entrada Comun");
     JButton botonvip = new JButton("Entrada Vip");
@@ -56,7 +53,7 @@ public class ProyectoCinema extends JFrame implements ActionListener, KeyListene
                 if (e.getSource().equals(this.botoncomun)){
                     String butacas = this.txfcantidad.getText();
                     double butacascant = Double.parseDouble(butacas);
-                    butacascant = butacascant * entradacomun.getPreciocomun();
+                    butacascant = butacascant * entrada.getPreciocomun();
                     precio.setText(butacascant + " $");
                     this.txfcantidad.setText("");
                     //Creamos una ventana
@@ -65,7 +62,7 @@ public class ProyectoCinema extends JFrame implements ActionListener, KeyListene
                 }else if(e.getSource().equals(this.botonvip)){
                     String butacas = this.txfcantidad.getText();
                     double butacascant = Double.parseDouble(butacas);
-                    butacascant = butacascant * entradavip.getPrecioVip();
+                    butacascant = butacascant * entrada.getPreciovip();
                     precio.setText(butacascant + " $");
                     this.txfcantidad.setText("");
                     VentanaSalas asientos = new VentanaSalas();

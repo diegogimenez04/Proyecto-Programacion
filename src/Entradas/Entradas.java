@@ -14,6 +14,13 @@ public class Entradas {
     private int preciovip;
     private String asiento;
 
+    public int getPreciocomun() {
+        return preciocomun;
+    }
+    public int getPreciovip() {
+        return preciovip;
+    }
+    
     public String getAsiento() {
         return asiento;
     }
